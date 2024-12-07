@@ -13,9 +13,9 @@ namespace RentACar.Application.Features.CQRS.Handlers.CarHandlers
 {
     public class UpdateCarCommandHandler
     {
-        private readonly IRepository<Car> _repository;
+        private readonly ICarRepository _repository;
 
-        public UpdateCarCommandHandler(IRepository<Car> repository)
+        public UpdateCarCommandHandler(ICarRepository repository)
         {
             _repository = repository;
         }

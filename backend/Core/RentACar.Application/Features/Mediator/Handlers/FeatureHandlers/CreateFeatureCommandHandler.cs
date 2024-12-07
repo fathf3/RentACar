@@ -12,8 +12,8 @@ namespace RentACar.Application.Features.Mediator.Handlers.FeatureHandlers
 {
     public class CreateFeatureCommandHandler : IRequestHandler<CreateFeatureCommand>
     {
-        private readonly IRepository<Feature> _repository;
-        public CreateFeatureCommandHandler(IRepository<Feature> repository)
+        private readonly IFeatureRepository _repository;
+        public CreateFeatureCommandHandler(IFeatureRepository repository)
         {
             _repository = repository;
         }

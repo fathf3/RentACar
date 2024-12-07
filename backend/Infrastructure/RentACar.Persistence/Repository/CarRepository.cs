@@ -11,18 +11,19 @@ using System.Threading.Tasks;
 namespace RentACar.Persistence.Repository
 {
 
-    public class CarRepository : ICarRepository
+    public class CarRepository : Repository<Car>, ICarRepository
     {
-        private readonly RentACarContext _context;
-        public CarRepository(RentACarContext context) 
+        public CarRepository(RentACarContext context) : base(context)
         {
-            _context = context;
         }
 
         public List<Car> GetCarsListWithBrand()
         {
-            var values = _context.Cars.Include(x => x.Brand).ToList();
-            return values;
+            using( var context = new RentACarContext())
+            {
+                return context.Cars.Include(x => x.Brand).ToList();
+            }
+
         }
     }
 }

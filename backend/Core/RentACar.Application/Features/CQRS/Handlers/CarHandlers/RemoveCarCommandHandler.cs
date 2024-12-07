@@ -11,9 +11,9 @@ namespace RentACar.Application.Features.CQRS.Handlers.CarHandlers
 {
     public class RemoveCarCommandHandler
     {
-        private readonly IRepository<Car> _repository;
+        private readonly ICarRepository _repository;
 
-        public RemoveCarCommandHandler(IRepository<Car> repository)
+        public RemoveCarCommandHandler(ICarRepository repository)
         {
             _repository = repository;
         }
