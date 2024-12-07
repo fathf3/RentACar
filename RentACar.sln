@@ -13,9 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentACar.Domain", "backend\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0226147E-4CEA-4A10-838F-404EAD863AC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Persistence", "backend\Infrastructure\RentACar.Persistence\RentACar.Persistence.csproj", "{8DD6408F-618E-4430-906D-B3D3F92852A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentACar.Persistence", "backend\Infrastructure\RentACar.Persistence\RentACar.Persistence.csproj", "{8DD6408F-618E-4430-906D-B3D3F92852A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Application", "backend\core\RentACar.Application\RentACar.Application.csproj", "{794C74E8-7571-4584-89DA-4E7F9F9EE8F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentACar.Application", "backend\core\RentACar.Application\RentACar.Application.csproj", "{794C74E8-7571-4584-89DA-4E7F9F9EE8F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{FE2123B8-6807-42EC-B713-7A45B415BFA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.WebApi", "presentation\RentACar.WebApi\RentACar.WebApi.csproj", "{FDEA8A76-8363-4D27-A1D2-9A1023CA281B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{794C74E8-7571-4584-89DA-4E7F9F9EE8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{794C74E8-7571-4584-89DA-4E7F9F9EE8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{794C74E8-7571-4584-89DA-4E7F9F9EE8F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEA8A76-8363-4D27-A1D2-9A1023CA281B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEA8A76-8363-4D27-A1D2-9A1023CA281B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEA8A76-8363-4D27-A1D2-9A1023CA281B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEA8A76-8363-4D27-A1D2-9A1023CA281B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +53,8 @@ Global
 		{0226147E-4CEA-4A10-838F-404EAD863AC9} = {D5279342-463D-47B3-BE6D-7EB5C775A928}
 		{8DD6408F-618E-4430-906D-B3D3F92852A6} = {0226147E-4CEA-4A10-838F-404EAD863AC9}
 		{794C74E8-7571-4584-89DA-4E7F9F9EE8F6} = {3FB882A6-8990-4A5A-8227-CDF12BB50ABB}
+		{FE2123B8-6807-42EC-B713-7A45B415BFA0} = {D5279342-463D-47B3-BE6D-7EB5C775A928}
+		{FDEA8A76-8363-4D27-A1D2-9A1023CA281B} = {FE2123B8-6807-42EC-B713-7A45B415BFA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {134F3F1C-5DA9-44AA-884C-72B1A6F1A134}

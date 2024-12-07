@@ -12,7 +12,7 @@ namespace RentACar.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseSqlServer("Server=DESKTOP-PB89LUO; Database=RentACar; Trusted_Connection=True;TrustServerCertificate=True;");
         }
 
         public DbSet<About> Abouts { get; set; }
