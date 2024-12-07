@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RentACar.Application.Interfaces
 {
-    public interface ICarRepository
+    public interface ICarRepository : IRepository<Car>
     {
         List<Car> GetCarsListWithBrand(); 
     }

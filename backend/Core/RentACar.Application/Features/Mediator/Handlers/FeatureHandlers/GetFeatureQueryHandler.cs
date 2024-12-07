@@ -8,8 +8,8 @@ namespace RentACar.Application.Features.Mediator.Handlers.FeatureHandlers
 {
     public class GetFeatureQueryHandler : IRequestHandler<GetFeatureQuery, List<GetFeatureQueryResult>>
     {
-        private readonly IRepository<Feature> _repository;
-        public GetFeatureQueryHandler(IRepository<Feature> repository)
+        private readonly IFeatureRepository _repository;
+        public GetFeatureQueryHandler(IFeatureRepository repository)
         {
             _repository = repository;
         }
