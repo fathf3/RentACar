@@ -4,6 +4,6 @@ namespace RentACar.Application.Interfaces
 {
     public interface IFeatureRepository : IRepository<Feature>
     {
-        int Count();
+        
     }
 }

@@ -18,6 +18,7 @@ namespace RentACar.Persistence
             services.AddScoped(typeof(IFeatureRepository), typeof(FeatureRepository));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(ICarRepository), typeof(CarRepository));
+            services.AddScoped(typeof(ICarPricingRepository), typeof(CarPricingRepository));
         }
     }
 }

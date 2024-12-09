@@ -9,6 +9,7 @@ namespace RentACar.Application.Interfaces
 {
     public interface ICarRepository : IRepository<Car>
     {
-        List<Car> GetCarsListWithBrand(); 
+        List<Car> GetCarsListWithBrand();
+        List<Car> GetLast5CarsWithBrands();
     }
 }

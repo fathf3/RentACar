@@ -19,11 +19,11 @@ namespace RentACar.Persistence.Repository
 
         public List<Car> GetCarsListWithBrand()
         {
-            using( var context = new RentACarContext())
-            {
-                return context.Cars.Include(x => x.Brand).ToList();
-            }
-
+                return _context.Cars.Include(x => x.Brand).ToList();
+        }
+        public List<Car> GetLast5CarsWithBrands()
+        { 
+                return _context.Cars.Include(x => x.Brand).OrderByDescending(x => x.Id).Take(5).ToList(); 
         }
     }
 }
