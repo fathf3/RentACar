@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentACar.Dto.CarDtos
+namespace RentACar.Application.Features.CQRS.Results.CarResults
 {
-    public class CreateCarDto
+    public class GetLast5CarsWithBrandQueryResult
     {
-        public int BrandId { get; set; }
+        public int Id { get; set; }
+        public int BrandID { get; set; }
+        public string BrandName { get; set; }
         public string Model { get; set; }
-        public string Image { get; set; }
-        public int Miles { get; set; }
+        public string CoverImageUrl { get; set; }
+        public int Km { get; set; }
         public string Transmission { get; set; }
         public byte Seat { get; set; }
         public byte Luggage { get; set; }

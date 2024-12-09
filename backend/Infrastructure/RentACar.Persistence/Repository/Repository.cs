@@ -12,7 +12,7 @@ namespace RentACar.Persistence.Repository
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly RentACarContext _context;
+        protected readonly RentACarContext _context;
         public DbSet<T> Table => _context.Set<T>();
         public Repository(RentACarContext context)
         {

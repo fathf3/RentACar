@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentACar.Dto.CarPricingDtos
+namespace RentACar.Application.ViewModels
 {
-    public class ResultCarPricingListWithModelDto
+    public class CarPricingViewModel
     {
         public string BrandName { get; set; }
         public string Model { get; set; }
@@ -14,5 +14,7 @@ namespace RentACar.Dto.CarPricingDtos
         public decimal DailyPrice { get; set; }
         public decimal WeaklyPrice { get; set; }
         public decimal MonthlyPrice { get; set; }
+        
+
     }
 }

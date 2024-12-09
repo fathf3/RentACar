@@ -15,12 +15,6 @@ namespace RentACar.Persistence.Repository
         {
         }
 
-        public int Count()
-        {
-            using(var context = new RentACarContext())
-            {
-                return context.Features.Count();
-            }
-        }
+      
     }
 }
