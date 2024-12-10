@@ -18,6 +18,7 @@ namespace RentACar.Application.Features.CQRS.Handlers.BannerHandlers
             values.VideoDescription = command.VideoDescription;
             values.VideoUrl = command.VideoUrl;
             values.Title = command.Title;
+            values.Description = command.Description;
             await _repository.UpdateAsync(values);
         }
     }
