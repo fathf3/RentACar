@@ -1,4 +1,6 @@
-﻿namespace RentACar.Dto.CarDtos
+﻿using RentACar.Dto.BrandDtos;
+
+namespace RentACar.Dto.CarDtos
 {
     public class UpdateCarDto
     {
@@ -12,5 +14,6 @@
         public byte Luggage { get; set; }
         public string Fuel { get; set; }
         public string BigImageUrl { get; set; }
+        public IList<ResultBrandDto> Brands { get; set; }
     }
 }

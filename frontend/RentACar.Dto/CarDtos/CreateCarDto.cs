@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RentACar.Dto.BrandDtos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,5 +18,6 @@ namespace RentACar.Dto.CarDtos
         public byte Luggage { get; set; }
         public string Fuel { get; set; }
         public string BigImageUrl { get; set; }
+        public IList<ResultBrandDto> Brands { get; set; }
     }
 }
