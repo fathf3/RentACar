@@ -13,7 +13,7 @@ namespace RentACar.Domain.Entities
         public Brand Brand { get; set; }
         public string Model { get; set; }
         public string Image { get; set; }
-        public string Miles { get; set; }
+        public int Miles { get; set; }
         public string Transmission { get; set; }
         public byte Seat { get; set; }
         public byte Luggage { get; set; }
@@ -22,6 +22,8 @@ namespace RentACar.Domain.Entities
         public List<CarFeature> CarFeatures { get; set; }
         public List<CarDescription> CarDescriptions { get; set; }
         public List<CarPricing> CarPricings { get; set; }
+        public List<RentCar> RentCars { get; set; }
+        public List<RentACarProcess> RentACarProcesses { get; set; }
 
 
     }

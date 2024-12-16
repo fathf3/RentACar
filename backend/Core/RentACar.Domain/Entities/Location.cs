@@ -10,5 +10,6 @@ namespace RentACar.Domain.Entities
     public class Location : BaseEntity
     {
         public string Name { get; set; }
+        public List<RentCar> RentCars { get; set; }
     }
 }

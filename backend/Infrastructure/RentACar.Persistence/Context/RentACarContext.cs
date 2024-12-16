@@ -31,6 +31,9 @@ namespace RentACar.Persistence.Context
         public DbSet<Pricing> Pricings { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<RentCar> RentCars { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<RentACarProcess> RentACarProcesses { get; set; }
 
     }
 }
