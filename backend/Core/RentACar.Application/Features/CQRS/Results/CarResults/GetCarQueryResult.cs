@@ -13,7 +13,7 @@ namespace RentACar.Application.Features.CQRS.Results.CarResults
         public int BrandId { get; set; }
         public string Model { get; set; }
         public string Image { get; set; }
-        public string Miles { get; set; }
+        public int Miles { get; set; }
         public string Transmission { get; set; }
         public byte Seat { get; set; }
         public byte Luggage { get; set; }
