@@ -11,5 +11,7 @@ namespace RentACar.Domain.Entities
     {
         public string Name { get; set; }
         public List<RentCar> RentCars { get; set; }
+        public List<Reservation> PickUpReservation { get; set; }
+        public List<Reservation> DropOffReservation { get; set; }
     }
 }
