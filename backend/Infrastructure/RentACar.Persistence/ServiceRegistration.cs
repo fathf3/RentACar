@@ -20,6 +20,11 @@ namespace RentACar.Persistence
             services.AddScoped(typeof(ICarRepository), typeof(CarRepository));
             services.AddScoped(typeof(IStatisticsRepository), typeof(StatisticsRepository));
             services.AddScoped(typeof(ICarPricingRepository), typeof(CarPricingRepository));
+            services.AddScoped(typeof(IRentACarRepository), typeof(RentACarRepository));
+            services.AddScoped(typeof(IUserRepository), typeof(AppUserRepository));
+            services.AddScoped(typeof(ICarFeatureRepository), typeof(CarFeatureRepository));
+            services.AddScoped(typeof(ICarDescriptionRepository), typeof(CarDescriptionRepository));
+            services.AddScoped(typeof(IReviewRepository), typeof(ReviewRepository));
         }
     }
 }
